@@ -1,4 +1,4 @@
-** TypeScript-এ keyof keyword এর ব্যবহার
+# TypeScript-এ keyof keyword এর ব্যবহার
 
 TypeScript এ keyof হচ্ছে একটি খুবই শক্তিশালী keyword। এটি কোনো object type এর সকল key কে union type হিসেবে বের করতে সাহায্য করে। মানে জানতে পারা যে কন কন প্রপার্টি একটি object এ থাকতে পারে।
 
