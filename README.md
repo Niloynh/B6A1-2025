@@ -2,7 +2,7 @@
 
 TypeScript এ keyof হচ্ছে একটি খুবই শক্তিশালী keyword। এটি কোনো object type এর সকল key কে union type হিসেবে বের করতে সাহায্য করে। মানে জানতে পারা যে কন কন প্রপার্টি একটি object এ থাকতে পারে।
 
-উদাহরণঃ
+## উদাহরণঃ
 
 type User = {
   id: number;
@@ -15,7 +15,7 @@ type UserKeys = keyof User;
 এখানে UserKeys হচ্ছে একটি union type আর id | name | email |
 এটি ব্যবহার করা যায় generic ফাংশন বা type safety এর জন্য।
 
-funtion এ ব্যবহার করাঃ
+## funtion এ ব্যবহার করাঃ
 
 function getValue(obj: user, key: keyof User) {
   return obj[key];
@@ -40,12 +40,12 @@ Enums হল একটি বিশেষ ধরনের ডেটা টাই
 
  আর এর মূল উদ্দেশ্য হলো কোডকে আরও রিডেবল করা মেইনটেইনেবল করা।
 
- enum এর ব্যাবহার 
+ # enum এর ব্যাবহার 
   ১। যেমনঃ Numeric enum > ডিফল্টভাবে TypeScript এ enum মানগুলো 0 থেকে শুরু হওয়া সংখ্যার ক্রম হিসেবে নিয়োগ করে।
 
   ২। যেমনঃ String enum > এখানে প্রতিটি enum এর value string হিসেবে স্পষ্টভাবে নিয়োগ করা হয়।
 
-  ## Numeric Enum Example
+  ## Numeric এনাম উদাহরণ
   enum Direction {
     Up,       // ০
     Down,     // ১
@@ -58,7 +58,7 @@ console.log(move);
 
 এখানে Direction.Up মানে 0, Direction.Down মানে 1 ইত্যাদি।
 
-## String Enum Example
+## স্ট্রিং এনাম উদাহরণ
 enum Role {
     Admin = "ADMIN",
     User = "USER",
